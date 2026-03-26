@@ -1,0 +1,5 @@
+{
+  "name": "Foodie - Online Food Ordering",
+  "description": "A simple online food ordering system with user authentication and admin controls.",
+  "requestFramePermissions": []
+}

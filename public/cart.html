@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Foodie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Foodie</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="foods.html">Menu</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li id="orders-link" style="display:none;"><a href="orders.html">My Orders</a></li>
+            <li id="login-link"><a href="login.html">Login</a></li>
+            <li id="logout-link" style="display:none;"><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Your Cart</h2>
+        <div id="cart-items">
+            <!-- Cart items will be loaded here -->
+        </div>
+        <div id="cart-summary" style="display:none;">
+            <h3>Total: $<span id="cart-total">0</span></h3>
+            <hr>
+            <h4>Checkout Details</h4>
+            <form id="order-form">
+                <input type="text" id="order-address" placeholder="Delivery Address" required>
+                <input type="text" id="order-phone" placeholder="Phone Number" required>
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+        <div id="empty-cart" style="display:none;">
+            <p>Your cart is empty. <a href="foods.html">Go to menu</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
