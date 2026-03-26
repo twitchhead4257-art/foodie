@@ -5,7 +5,7 @@ services:
     plan: free
     branch: main
     buildCommand: npm install
-    startCommand: npm start
+    startCommand: npx tsx server.ts
     autoDeploy: true
     envVars:
       - key: JWT_SECRET
