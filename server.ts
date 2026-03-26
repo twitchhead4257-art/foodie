@@ -3,11 +3,11 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import connectDB from './config/db.ts';
-import authRoutes from './routes/authRoutes.ts';
-import foodRoutes from './routes/foodRoutes.ts';
-import orderRoutes from './routes/orderRoutes.ts';
-import contactRoutes from './routes/contactRoutes.ts';
+import connectDB from './config/db.js';
+import authRoutes from './routes/authRoutes.js';
+import foodRoutes from './routes/foodRoutes.js';
+import orderRoutes from './routes/orderRoutes.js';
+import contactRoutes from './routes/contactRoutes.js';
 
 dotenv.config();
 
@@ -15,7 +15,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Connect to Database
 connectDB();

@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: foodie-online-food-ordering
+    env: node
+    plan: free
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: JWT_SECRET
+        value: yoursecretkey
+        sync: false

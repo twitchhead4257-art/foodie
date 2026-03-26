@@ -1,6 +1,6 @@
 import express from 'express';
-import Food from '../models/Food.ts';
-import { authMiddleware, adminMiddleware } from '../middleware/auth.ts';
+import Food from '../models/Food.js';
+import { authMiddleware, adminMiddleware } from '../middleware/auth.js';
 
 const router = express.Router();
 

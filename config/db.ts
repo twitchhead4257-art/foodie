@@ -1,11 +1,6 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-
-dotenv.config();
-
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
-import Food from '../models/Food.ts';
+import Food from '../models/Food.js';
 
 dotenv.config();
 
